@@ -180,6 +180,9 @@ abstract class BaseServiceClient {
 		return true;
 	}
 	# ----------------------------------------------
+	public function setAuthToken($token) {
+		$this->ops_auth_token = $token;
+	}
 	public function getAuthToken() {
 		return $this->ops_auth_token;
 	}
